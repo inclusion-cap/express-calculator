@@ -7,7 +7,7 @@ test('addition works', function () {
 })
 
 test('addition works, strings converted to numbers', function () {
-  expect(functions.calculator('addition', '1', '2')).toBe('dog');
+  expect(functions.calculator('addition', '1', '2')).toBe(3);
 })
 
 test('subtraction works', function () {
