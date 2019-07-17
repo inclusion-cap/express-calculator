@@ -4,7 +4,8 @@
   "description": "// *Activity Instructions* //  You will create an Express calculator application with one `GET` route able to take in three parameters:  //an operation and two numbers.",
   "main": "calculator.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node calculator.js"
   },
   "repository": {
     "type": "git",
