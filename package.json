@@ -2,10 +2,10 @@
   "name": "expresscalc",
   "version": "1.0.0",
   "description": "// *Activity Instructions* //  You will create an Express calculator application with one `GET` route able to take in three parameters:  //an operation and two numbers.",
-  "main": "calculator.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node calculator.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
