@@ -37,7 +37,7 @@ const calculator = function (operator, num1, num2) {
       break;
 
     default:
-      result = "Sorry, please enter a valid operator!"
+      result = "Sorry, please enter a valid operator! (addition, subtraction, multiplication, division)"
   }
 
   return result;
