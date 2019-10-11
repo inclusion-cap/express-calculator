@@ -21,7 +21,6 @@ app.get("/", function (req, res) {
 	res.send("hello! add url params like this /:addition/:num1/:num2")
 });
 
-//listener
 app.listen(PORT, function () {
 	console.log("App listening on PORT:" + PORT);
 });
