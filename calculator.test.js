@@ -23,5 +23,5 @@ test('multiplication works', function () {
 })
 
 test('error-handling for undefined operator works', function () {
-  expect(functions.calculator('something else', '4', '6')).toBe("Sorry, please enter a valid operator!");
+  expect(functions.calculator('something else', '4', '6')).toBe("Sorry, please enter a valid operator! (addition, subtraction, multiplication, division)");
 })
