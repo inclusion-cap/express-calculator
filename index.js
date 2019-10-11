@@ -3,9 +3,13 @@ var express = require("express");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+var StatsD = require('node-dogstatsd').StatsD;
+var dogstatsd = new StatsD();
+
 const { calculator } = require('./calculator.helper');
 
 app.get('/:operator/:num1/:num2', function (req, res) {
+	dogstatsd.increment('page.views')
 	var { operator, num1, num2 } = req.params
 	var result = calculator(operator, num1, num2);
 
@@ -13,7 +17,8 @@ app.get('/:operator/:num1/:num2', function (req, res) {
 });
 
 app.get("/", function (req, res) {
-	res.send("hello! travis and heroku3")
+	dogstatsd.increment('page.views')
+	res.send("hello! add url params like this /:addition/:num1/:num2")
 });
 
 //listener
