@@ -18,7 +18,18 @@ app.get('/:operator/:num1/:num2', function (req, res) {
 
 app.get("/", function (req, res) {
 	dogstatsd.increment('page.views')
+
 	res.send("hello! add url params like this /:addition/:num1/:num2")
+});
+
+app.get("/about", function (req, res) {
+	dogstatsd.increment('page.views')
+
+	res.send(`Calculator: four available operations:
+	- addition
+- subtraction
+- multiplication
+- division `)
 });
 
 app.listen(PORT, function () {
