@@ -16,4 +16,4 @@ For example, when the user goes to `http://localhost:3000/addition/10/1`, the pa
 
 ## How to run this application
 - `npm install`
-- `node calculator.js`
+- `node calculator.js` or `npm run start`
