@@ -26,10 +26,10 @@ app.get("/about", function (req, res) {
 	dogstatsd.increment('page.views')
 
 	res.send(`Calculator: four available operations:
-	- addition
-- subtraction
-- multiplication
-- division `)
+	<li>addition</li>
+	<li>subtraction</li>
+	<li>multiplication</li>
+	<li>division</li>`)
 });
 
 app.listen(PORT, function () {
